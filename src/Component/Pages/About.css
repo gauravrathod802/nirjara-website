@@ -28,6 +28,9 @@
     padding: 1rem;
 }
 
+.list li{
+    text-align: left;
+}
 
 
 @media screen and (max-width: 780px) {

@@ -3,11 +3,11 @@ import './App.css'
 import Footer from './Component/Footer/Footer';
 import SimpleSlider from './Component/Slider/SimpleSlider';
 import CustomerStory from './Component/CustomerStories/CustomerStory';
-import RingCategories from './Component/Ring categories/RingCategories';
+// import RingCategories from './Component/Ring categories/RingCategories';
 import {Routes, Route} from 'react-router-dom';
 import Login from './Component/Authentication/Login';
 import SignUp from './Component/Authentication/SignUp';
-import EssentialProduct from './Component/Kalyani Essentials/EssentialProduct';
+// import EssentialProduct from './Component/Kalyani Essentials/EssentialProduct';
 import Cart from './Component/Cart/Cart';
 import Wishlist from './Component/Wishlist/Wishlist';
 import Products from './Component/Products/Products';
@@ -15,6 +15,8 @@ import SinglePageProduct from './Component/SinglePageProduct/SinglePageProduct';
 import Navigation from './Component/Header/Navigation';
 import About from './Component/Pages/About';
 import Checkout from './Component/ProductCheckout/Checkout';
+import TagLine from './Component/TagLine/TagLine';
+
 
 function App() {
 
@@ -27,9 +29,10 @@ function App() {
         <Route path="/Jewellery-Website/" element={
           <>
             <SimpleSlider />
-            <RingCategories />
+            {/* <RingCategories /> */}
+            <TagLine/>
             <Products/>
-            <EssentialProduct/>
+            {/* <EssentialProduct/> */}
             <CustomerStory />
 
           </>

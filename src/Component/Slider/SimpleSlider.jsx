@@ -42,12 +42,17 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './SimpleSlider.css';
+import Ayurveda from "../../assets/Ayurveda2.png";
+import Banner2 from "../../assets/banner2.png";
+import Banner3 from "../../assets/banner3.png";
+import Banner4 from "../../assets/banner4.png";
 
+// 1450px 460px
 const images = [
-  { url: "https://www.giva.co/cdn/shop/files/In_Vogue_Hero_Website-min.jpg?v=1708421837&width=1780" },
-  { url: "https://www.giva.co/cdn/shop/files/Bestseller_Hero_website-min_1.jpg?v=1708437975&width=3840%22" },
-  { url: "https://www.giva.co/cdn/shop/files/gold_hero_banner_-web-min.jpg?v=1708421757&width=375%20375w,%20" },
-  { url: "https://www.giva.co/cdn/shop/files/hero_banner_web_2_-min_1.jpg?v=1702014551&width=3840%22" },
+  { url: Ayurveda },
+  { url: Banner2},
+  { url: Banner3},
+  { url: Banner4 },
 ];
 
 const SimpleSlider = () => {

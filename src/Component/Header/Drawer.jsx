@@ -130,7 +130,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { FaHome, FaShoppingBasket, FaListAlt, FaTags, FaBoxOpen, FaUser } from "react-icons/fa";
 import ExpandMenu from "./ExpandMenu";
-import Logo from '../../assets/logo3.png';
+import Logo from '../../assets/NirjaraLogo.png';
 
 const Drawer = ({ isOpen, toggleDrawer, routes }) => {
   return (

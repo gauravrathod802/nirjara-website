@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import './Footer.css';
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa6";
@@ -20,13 +20,13 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-lg-4 col-md-6 col-sm-8">
                             <div className="widgets_container contact_us">
-                                <h3>About Kalyani</h3>
+                                <h3>About Nirjara</h3>
                                 <div className="footer_contact">
                                     <p>Address : plot no 243 gali no 4,<br/>
                                         rishi galav nagar, galta gate, <br/>
-                                        jaipur (raj) pincode 302003</p>
+                                        nagpur (raj) pincode 302003</p>
                                     <p>Phone : (+91) 888888885555</p>
-                                    <p>Email : kalyanijewlers@gmail.com</p>
+                                    <p>Email : nirjaraskincare@gmail.com</p>
                                     <ul>
                                         <li><a href="#" style={{fontSize:20}}><FaFacebookF/></a></li>
                                         <li><a href="#" style={{fontSize:20}}><FaTwitter /></a></li>
@@ -66,54 +66,14 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-7">
-                            <div className="widgets_container product_widget">
-                                <h3 className='popular_product'>Popular Products</h3>
-                                <div className="simple_product">
-                                    <div className="simple_product_items">
-                                        
-                                        <div className="simple_product_content">
-                                            <div className="tag_cate">
-                                                <a href="#">Women,</a>
-                                                <a href="#"> Earrings</a>
-                                            </div>
-                                            <div className="product_name">
-                                                <h3><a href="#">Bracelet</a></h3>
-                                            </div>
-                                            <div className="product_price">
-                                                <span className="old_price">Rs. 45612.54</span>
-                                                <span className="current_price">Rs. 41612.54</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="simple_product_items">
-                                        {/* <div className="simple_product_thumb">
-                                            <a href="#"><img src="https://www.giva.co/cdn/shop/files/R0688_5.jpg?v=1685630347&width=320" alt="" /></a>
-                                        </div> */}
-                                        <div className="simple_product_content">
-                                            <div className="tag_cate">
-                                                <a href="#">Women,</a>
-                                                <a href="#"> Earrings</a>
-                                            </div>
-                                            <div className="product_name">
-                                                <h3><a href="#">Ring</a></h3>
-                                            </div>
-                                            <div className="product_price">
-                                                <span className="old_price">Rs. 75612.54</span>
-                                                <span className="current_price">Rs. 71612.54</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
                 <div className="footer_bottom">
                     <div className="row">
                         <div className="col-12">
                             <div className="copyright_area">
-                                <p>Copyright &copy; 2024 <a href="#">Kalyani</a> All rights Reserved.</p>
+                                <p>Copyright &copy; 2024 <a href="#">Nirjara</a> All rights Reserved.</p>
                             </div>
                         </div>
                     </div>
