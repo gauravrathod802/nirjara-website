@@ -26,7 +26,7 @@ function App() {
       {/* <Header/> */}
 
       <Routes>
-        <Route path="/Jewellery-Website/" element={
+        <Route path="/nirjara-website/" element={
           <>
             <SimpleSlider />
             {/* <RingCategories /> */}
@@ -38,13 +38,13 @@ function App() {
           </>
           } />
 
-        <Route path="/Jewellery-Website/login" element={<Login/>}/>
-        <Route path="/Jewellery-Website/sign-up" element={<SignUp/>}/>
-        <Route path='/Jewellery-Website/cart' element={<Cart/>}/>
-        <Route path='/Jewellery-Website/wishlist' element={<Wishlist/>}/>
-        <Route path='/Jewellery-Website/product/:index' element={<SinglePageProduct/>} />        
-        <Route path='/Jewellery-Website/product/checkout' element={<Checkout/>}/>
-        <Route path='/Jewellery-Website/about-us' element={<About/>}/>
+        <Route path="/nirjara-website/login" element={<Login/>}/>
+        <Route path="/nirjara-website/sign-up" element={<SignUp/>}/>
+        <Route path='/nirjara-website/cart' element={<Cart/>}/>
+        <Route path='/nirjara-website/wishlist' element={<Wishlist/>}/>
+        <Route path='/nirjara-website/product/:index' element={<SinglePageProduct/>} />        
+        <Route path='/nirjara-website/product/checkout' element={<Checkout/>}/>
+        <Route path='/nirjara-website/about-us' element={<About/>}/>
   
       </Routes>
       <Footer/>

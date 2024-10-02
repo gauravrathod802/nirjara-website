@@ -1,7 +1,7 @@
 export const routes = [
     {
       name: "Home",
-      link: "/Jewellery-Website/",
+      link: "/nirjara-website/",
     },
       // {
       //   name: "Shop by Category",
