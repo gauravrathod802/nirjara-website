@@ -11,7 +11,7 @@ const Login = () => {
     const navigate = useNavigate();
 
     const gotoSignUp = () => {
-        navigate("/Jewellery-Website/sign-up");
+        navigate("/nirjara-website/sign-up");
     }
 
     const handleToggle = () => {

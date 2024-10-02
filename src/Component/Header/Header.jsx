@@ -113,19 +113,19 @@ const Header = ({ toggleDrawer, routes }) => {
     const navigate = useNavigate();
 
     const handleAccountClick = () => {
-        navigate("/Jewellery-Website/login"); // Navigate to the account route
+        navigate("/nirjara-website/login"); // Navigate to the account route
     };
 
     const handleWishlistClick = () => {
-        navigate("/Jewellery-Website/wishlist"); // Navigate to the wishlist route
+        navigate("/nirjara-website/wishlist"); // Navigate to the wishlist route
     };
 
     const handleCartClick = () => {
-        navigate("/Jewellery-Website/cart"); // Navigate to the cart route
+        navigate("/nirjara-website/cart"); // Navigate to the cart route
     };
 
     const handleHomeClick = () => {
-        navigate("/Jewellery-Website/");
+        navigate("/nirjara-website/");
     };
 
     return (
