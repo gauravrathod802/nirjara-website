@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.about-container{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-container img{
+    display: block;
+    margin: 0 auto; /* This will center the image horizontally */
+    width: 100%;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    padding: 2rem;
+
+}
+
+.about-container p{
+    text-align: center;
+    padding: 1rem;
+    margin:0 10rem
+}
+.about-container p h1{
+    text-align: center;
+    padding: 1rem;
+}
+
+.list li{
+    text-align: left;
+}
+
+
+@media screen and (max-width: 780px) {
+
+    .about-container p{
+        text-align: center;
+        padding: 1rem;
+        margin:0 1rem;
+        font-size: 0.9rem
+    }
+
+    .about-container p h1{
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+}
