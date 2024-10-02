@@ -46,32 +46,32 @@ export const routes = [
       // },
       {
         name: "Latest Collections",
-        link: "/Jewellery-Website/latest-collections",
+        link: "/nirjara-website/latest-collections",
       },
       {
         name: "New Arrivals",
-        link: "/Jewellery-Website/new-arrivals",
+        link: "/nirjara-website/new-arrivals",
       },
   
       {
         name: "Offers",
-        link: "/Jewellery-Website/offers",
+        link: "/nirjara-website/offers",
       },
       {
         name: "About us",
-        link: "/Jewellery-Website/about-us",
+        link: "/nirjara-website/about-us",
       },
   
       {
         name: "Bestsellers",
-        link: "/Jewellery-Website/best-sellers",
+        link: "/nirjara-website/best-sellers",
       },
       {
         name: "Login",
-        link: "/Jewellery-Website/login",
+        link: "/nirjara-website/login",
       },
       {
         name: "Register",
-        link: "/Jewellery-Website/sign-up",
+        link: "/nirjara-website/sign-up",
       },
     ];
