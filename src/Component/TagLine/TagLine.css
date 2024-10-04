@@ -1,0 +1,20 @@
+
+
+
+@media screen and (max-width: 768px) {
+  /* Adjust font sizes for mobile devices */
+  .headingStyle {
+    font-size: "1.8rem";
+  }
+  .taglineStyle {
+    font-size: "1rem";
+  }
+  .contentStyle {
+    font-size: "1.2rem";
+  }
+
+  .productImageStyle {
+    max-width: "50%;";
+    border-radius: "50%";
+  }
+}

@@ -1,4 +1,7 @@
-import Logo from "../../assets/box idea.jpg";
+import Tagline1 from "../images/Tagline1.png";
+import Tagline2 from "../images/Tagline2.png";
+import Tagline3 from "../images/Tagline3.png";
+import './TagLine.css';
 
 const TagLine = () => {
     return (
@@ -8,7 +11,17 @@ const TagLine = () => {
                 <p style={taglineStyle}>Rejuvenate Your Skin with the Wisdom of Ayurveda.</p>
                 <p style={contentStyle}>Welcome to a new age of skincare where ancient Ayurvedic wisdom meets modern convenience. Our <strong>Nirjara Powder Face Wash</strong> is meticulously crafted with the <strong>100% </strong>natural ingredients to bring out your skin's true radiance, all while staying gentle on the skin and kind to nature.</p>
                 <img
-                    src={Logo} // Replace with your product image URL
+                    src={Tagline1}
+                    alt="Ayurvedic Face Wash"
+                    style={productImageStyle}
+                />
+                <img
+                    src={Tagline2}
+                    alt="Ayurvedic Face Wash"
+                    style={productImageStyle}
+                />
+                <img
+                    src={Tagline3}
                     alt="Ayurvedic Face Wash"
                     style={productImageStyle}
                 />
@@ -21,43 +34,54 @@ const TagLine = () => {
 
 const bannerStyle = {
     display: 'flex',
+    flexWrap: 'wrap',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '500px',  // Adjust the height as needed
-    // backgroundColor: '#f4f4f4', // Light background color
+    minHeight: '80vh', /* Use min-height instead of height */
     textAlign: 'center',
 };
 
 const contentContainerStyle = {
     display: 'flex',
-    flexDirection: 'column',
+    flexWrap: 'wrap',
     justifyContent: 'center',
     alignItems: 'center',
+    maxWidth: '80%', /* Keep the maximum width */
+    margin: '20px auto', /* Keep the margin */
+    padding: '20px', /* Add some padding for better readability */
 };
 
 const headingStyle = {
-    fontSize: '3rem',
-    color: '#4CAF50',  // Herbal, earthy color
+    fontSize: '2.5rem', /* Use a relative font size */
+    color: '#4CAF50',
     fontWeight: 'bold',
     marginBottom: '20px',
 };
 
+
 const taglineStyle = {
-    fontSize: '2rem',
+    fontSize: '1.8rem', /* Use a relative font size */
     color: '#666',
     marginBottom: '30px',
 };
 
 const contentStyle = {
-    fontSize: '1.3rem',
+    fontSize: '1.5rem', /* Use a relative font size */
     color: '#666',
     marginBottom: '30px',
-    marginLeft:'50px',
-    marginRight:'50px'
+    marginLeft: '50px',
+    marginRight: '50px',
 };
+
 const productImageStyle = {
-    width: '300px',  // Adjust image size as needed
-    borderRadius: '8px',  // Optional border-radius for smoother corners
-    // marginBottom:'1rem'
+    maxWidth: '15%', /* Use a relative width */
+    height: 'auto', /* Keep the height auto */
+    borderRadius: '50%',
+    margin: '20px',
+    marginBottom: '1rem',
+
 };
-export default TagLine
+
+
+
+export default TagLine;

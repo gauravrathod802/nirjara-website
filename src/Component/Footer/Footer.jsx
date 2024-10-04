@@ -1,9 +1,7 @@
 // import React from 'react';
 import './Footer.css';
-import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
-import { FaGooglePlusG } from "react-icons/fa";
 import Visa from "../images/visa.png";
 import MasterCard from "../images/mastercard.png";
 import Paypal from "../images/paypal.png";
@@ -28,10 +26,13 @@ const Footer = () => {
                                     <p>Phone : (+91) 888888885555</p>
                                     <p>Email : nirjaraskincare@gmail.com</p>
                                     <ul>
-                                        <li><a href="#" style={{fontSize:20}}><FaFacebookF/></a></li>
-                                        <li><a href="#" style={{fontSize:20}}><FaTwitter /></a></li>
-                                        <li><a href="#" style={{fontSize:23}}><FaWhatsapp /></a></li>
-                                        <li><a href="#"style={{fontSize:27}} ><FaGooglePlusG /></a></li>
+                                        <li><a href="https://www.facebook.com/profile.php?id=61565578221858" style={{fontSize:20}}><FaFacebookF/></a></li>
+                                        <li><a href="https://www.instagram.com/nirjaraskincare/" style={{fontSize:20}}><FaInstagram /></a></li>
+                                        <li><a href="https://api.whatsapp.com/send?phone=%2B919075487410&context=ARDNBbp3Wzr0TQVvX4y4va-ojQOxQ5BKnvm1ut7C2Em1SSDhQ5Nmvhmdc9RKv3y8_-7JGGmkLFPyPHuuUkRWqoudDZOootViwTNvJt_JIi1tY7_1qSlTEyOxKaseG3eyBQe2i6t37xGFhhwumLQ2BLTtzQ&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawFstOtleHRuA2FlbQIxMAABHYIPNchg0kXoAb2m7BToGnC-yj-wBrvaf_GZ_RJqqxXjKreDhGIF4NZknA_aem_CM6pRpi8SztiU7FJU7KBdg" style={{fontSize:23}}><FaWhatsapp /></a></li>
+
+
+                                        {/* <li><a href="#"style={{fontSize:27}} ><FaGooglePlusG /></a></li> */}
+
                                     </ul>
                                 </div>
                             </div>

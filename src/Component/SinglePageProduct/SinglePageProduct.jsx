@@ -63,7 +63,7 @@ const SinglePageProduct = () => {
                 )}
                 <div className='singlepageproduct-button'>
                     <button className='add-to-cart-btn'>Add to Cart</button>
-                    <Link to={`/Jewellery-Website/product/checkout/`}>
+                    <Link to={`/nirjara-website/product/checkout/`}>
                     <button className='buy-now-btn'>
                     Buy Now
                     </button>
