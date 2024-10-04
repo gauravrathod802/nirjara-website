@@ -16,7 +16,7 @@ import Navigation from './Component/Header/Navigation';
 import About from './Component/Pages/About';
 import Checkout from './Component/ProductCheckout/Checkout';
 import TagLine from './Component/TagLine/TagLine';
-
+import Faq from './Component/FAQ/Faq';
 
 function App() {
 
@@ -34,6 +34,7 @@ function App() {
             <Products/>
             {/* <EssentialProduct/> */}
             <CustomerStory />
+           
 
           </>
           } />
@@ -45,6 +46,7 @@ function App() {
         <Route path='/nirjara-website/product/:index' element={<SinglePageProduct/>} />        
         <Route path='/nirjara-website/product/checkout' element={<Checkout/>}/>
         <Route path='/nirjara-website/about-us' element={<About/>}/>
+        <Route path='/nirjara-website/faq' element={<Faq/>}/>
   
       </Routes>
       <Footer/>

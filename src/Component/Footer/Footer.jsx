@@ -5,10 +5,27 @@ import { FaWhatsapp } from "react-icons/fa6";
 import Visa from "../images/visa.png";
 import MasterCard from "../images/mastercard.png";
 import Paypal from "../images/paypal.png";
+import { useNavigate } from 'react-router-dom';
 
 
 
 const Footer = () => {
+
+
+    const navigate = useNavigate();
+
+    const handleClickAboutUs=()=>{
+        navigate('/nirjara-website/about-us');
+    }
+
+    const handleClickWishlist=()=>{
+        navigate('/nirjara-website/wishlist');
+    }
+
+    const handleClickFaq=()=>{
+        navigate('/nirjara-website/faq');
+    }
+
   return (
     <div>
        {/* <!-- footer section starts --> */}
@@ -20,9 +37,9 @@ const Footer = () => {
                             <div className="widgets_container contact_us">
                                 <h3>About Nirjara</h3>
                                 <div className="footer_contact">
-                                    <p>Address : plot no 243 gali no 4,<br/>
-                                        rishi galav nagar, galta gate, <br/>
-                                        nagpur (raj) pincode 302003</p>
+                                    <p>Address : 106, Bhole Nagar,<br/>
+                                    Chandrakiran Nagar, <br/>
+                                    Nagpur, Maharashtra 440024, India</p>
                                     <p>Phone : (+91) 888888885555</p>
                                     <p>Email : nirjaraskincare@gmail.com</p>
                                     <ul>
@@ -42,7 +59,7 @@ const Footer = () => {
                                 <h3>Information</h3>
                                 <div className="footer_menu">
                                     <ul>
-                                        <li><a href="#">About Us</a></li>
+                                        <li><a style={{cursor:'pointer'}}onClick={handleClickAboutUs}>About Us</a></li>
                                         <li><a href="#">Contact</a></li>
                                         <li><a href="#">Collection</a></li>
                                         {/* <li><a href="#">          </a></li>
@@ -58,11 +75,10 @@ const Footer = () => {
                                 <div className="footer_menu">
                                     <ul>
                                         <li><a href="#">My Account</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                        <li><a href="#">Wishlist</a></li>
+                                        <li><a onClick={handleClickWishlist}href="#">Wishlist</a></li>
                                         {/* <li><a href="#">Portfolio</a></li> */}
                                         <li><a href="#">Checkout</a></li>
-                                        <li><a href="#">Frequently Questions</a></li>
+                                        <li><a onClick={handleClickFaq}href="#">Frequently Asked Questions</a></li>
                                     </ul>
                                 </div>
                             </div>
