@@ -68,7 +68,7 @@ const Products = () => {
         {products.map((product, index) => (
         <div className="box" key={index}>
             <div className="card">
-          <Link to={`/Jewellery-Website/product/${index}`} state={{ product: products[index] }}>
+          <Link to={`/nirjara-website/product/${index}`} state={{ product: products[index] }}>
               <div className="image">
                 <img src={product.imagename} alt="image" /> 
                  </div>

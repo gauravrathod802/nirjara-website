@@ -1,4 +1,3 @@
-import React from 'react'
 import "./Checkout.css";
 
 const Checkout = () => {
@@ -88,6 +87,11 @@ const Checkout = () => {
                 <hr/>
             </div>
         </div>
+
+
+
+
+        
         <div className="checkout-rightpart">
             <h1>Product Details</h1>
             <div className="checkout-product-details-container">
