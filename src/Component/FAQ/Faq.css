@@ -1,0 +1,70 @@
+/* Styles for FAQ component */
+.faq-section {
+    width: 70%;
+    margin: 3rem auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .faq-item {
+    margin: 20px 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .faq-question {
+    flex-grow: 1;
+    margin-left: 10px;
+    text-align: left;
+  }
+  
+  .faq-answer {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+    text-align: left;
+    padding: 15px;
+
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 768px) {
+    .faq-section {
+      width: 90%;
+    }
+  
+    .faq-header {
+      font-size: 1rem;
+    }
+  
+    .faq-answer {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* For very small devices */
+  @media (max-width: 480px) {
+    .faq-section {
+      width: 90%;
+    }
+  
+    .faq-header {
+      font-size: 0.7rem;
+    }
+  
+    .faq-answer {
+      font-size: 0.6rem;
+      padding: 10px;
+    }
+  }
+  
