@@ -12,13 +12,16 @@
     margin-top: 20px;
     width: 96%;
     height: 200px;
-    background-color: #FFD0CE;
+    /* background-color: #FFD0CE; */
+    background-color: #007910;
+
     border-radius: 10px;
     padding-top: 12px;
 }
 .containers .sub-container .sub-container-child h5{
     font-size: 20px;
     font-weight: 400;
+    color: white;
 }
 .containers .sub-container .sub-container-child p{
     /* margin-top: 8px; */
@@ -30,6 +33,8 @@
     line-height: 25px;
     font-family: "Lato";
     overflow: hidden;
+    color: white;
+
 }
 .containers .sub-container .bottom-img{
     transform: translateY(-45%);
