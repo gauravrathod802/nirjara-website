@@ -1,20 +1,102 @@
+/* General styles for desktop view */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  text-align: center;
+  padding: 20px;
+}
 
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
 
+.heading {
+  font-size: 2.5rem;
+  color: #4CAF50;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 
+.tagline {
+  font-size: 1.8rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.content {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.image-container {
+  display: flex;  /* Ensures the images are aligned in a row */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap; /* Prevents wrapping, keeps images in a row */
+  gap: 20px; /* Adds some space between images */
+}
+
+.product-image {
+  max-width: 15%; /* Adjust image size for desktop */
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
-  /* Adjust font sizes for mobile devices */
-  .headingStyle {
-    font-size: "1.8rem";
+  .heading {
+      font-size: 1.7rem;
   }
-  .taglineStyle {
-    font-size: "1rem";
+  .tagline {
+      font-size: 1.2rem;
   }
-  .contentStyle {
-    font-size: "1.2rem";
+  .content {
+      font-size: 1rem;
   }
 
-  .productImageStyle {
-    max-width: "50%;";
-    border-radius: "50%";
+  .product-image {
+      max-width: 25%; /* Resize images on smaller screens, but keep them in a row */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heading {
+      font-size: 1.4rem;
+  }
+  .tagline {
+      font-size: 1rem;
+  }
+  .content {
+      font-size: 1rem;
+  }
+
+  .product-image {
+      max-width: 25%; /* Resize further for very small screens, but remain in row */
+  }
+}
+
+
+@media screen and (max-width: 434px) {
+  .heading {
+      font-size: 1rem;
+  }
+  .tagline {
+      font-size: 0.7rem;
+  }
+  .content {
+      font-size: 0.7rem;
+  }
+
+  .product-image {
+      max-width: 25%; /* Resize further for very small screens, but remain in row */
   }
 }
