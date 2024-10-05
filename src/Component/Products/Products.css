@@ -48,11 +48,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 98%;
+  width: 100%;
   height: auto;
 }
 .products .box .card .image img {
-  width: 70%;
+  width: 50%;
   object-fit: cover;
   transition: 0.3s;
   cursor: pointer;

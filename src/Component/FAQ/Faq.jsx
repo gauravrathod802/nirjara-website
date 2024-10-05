@@ -64,6 +64,17 @@ const FAQ = () => {
       ),
     },
     {
+      question: "Who should use this product?",
+      answer: (
+        <div>
+          <p>- If your skin often feels dry, tight, or flaky.</p>
+          <p>- If you struggle with dullness and rough patches.</p>
+          <p>- For those who prefer a chemical-free, natural skincare routine.</p>
+          <p>- If you want a gentle cleanse that leaves your skin soft and supple all day.</p>
+        </div>
+      ),
+    },
+    {
       question: "Why Ayurveda for Skincare?",
       answer: (
         <div>
