@@ -42,10 +42,10 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './SimpleSlider.css';
-import Ayurveda from "../../assets/Ayurveda2.png";
-import Banner2 from "../../assets/banner2.png";
-import Banner3 from "../../assets/banner3.png";
-import Banner4 from "../../assets/banner4.png";
+import Ayurveda from "../../assets/Ayurveda4.png";
+import Banner2 from "../../assets/first.png";
+import Banner3 from "../../assets/second.png";
+import Banner4 from "../../assets/second.png";
 
 // 1450px 460px
 const images = [

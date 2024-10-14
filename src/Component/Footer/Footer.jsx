@@ -6,11 +6,17 @@ import Visa from "../images/visa.png";
 import MasterCard from "../images/mastercard.png";
 import Paypal from "../images/paypal.png";
 import { useNavigate } from 'react-router-dom';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 
 const Footer = () => {
 
+    useEffect(()=>{
+        AOS.init({duration: 2000});
+      },[])
+    
 
     const navigate = useNavigate();
 
@@ -29,7 +35,7 @@ const Footer = () => {
   return (
     <div>
        {/* <!-- footer section starts --> */}
-        <footer className="footer_widgets footer_black">
+        <footer className="footer_widgets footer_black" data-aos="fade-up">
             <div className="container">
                 <div className="footer_top">
                     <div className="row">
@@ -40,7 +46,7 @@ const Footer = () => {
                                     <p>Address : 106, Bhole Nagar,<br/>
                                     Chandrakiran Nagar, <br/>
                                     Nagpur, Maharashtra 440024, India</p>
-                                    <p>Phone : (+91) 888888885555</p>
+                                    <p>Phone : (+91) 9075487410</p>
                                     <p>Email : nirjaraskincare@gmail.com</p>
                                     <ul>
                                         <li><a href="https://www.facebook.com/profile.php?id=61565578221858" style={{fontSize:20}}><FaFacebookF/></a></li>

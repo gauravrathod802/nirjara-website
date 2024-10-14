@@ -5,7 +5,7 @@ const Cart = () => {
     const navigate = useNavigate();
 
     const gotoHomePage = () => {
-        navigate("/Jewellery-Website/")
+        navigate("/nirjara-website/")
     }
     return (
         <div className='cart-container'>

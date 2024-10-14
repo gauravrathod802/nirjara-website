@@ -1,9 +1,16 @@
 import "./CustomerStory.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 const CustomerStory = () => {
+
+  useEffect(()=>{
+    AOS.init({duration: 2000});
+  },[])
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -26,10 +33,10 @@ const CustomerStory = () => {
 
 
   return (
-    <div className="containers">
+    <div className="containers" data-aos="fade-up">
       <h1>Customer Stories</h1>
       <Carousel responsive={responsive}
-     >
+    >
         <div className="sub-container">
           <div className="sub-container-child">
             <h5>Priyanka</h5>
@@ -46,7 +53,7 @@ const CustomerStory = () => {
           <div className="sub-container-child">
             <h5>Shivani</h5>
             <p>
-            I have been using pitta face wash for the past few months and have had a great experience with it. My mother also uses it. This has made a significant difference in my skin, it is even more youthful. It is a great face wash made of natural herbs.
+            I have been using pitta face wash for the past few months and have had a great experience with it. My mother also uses it. This has made a significant difference in my skin, it is even more youthful.
             </p>
           </div>
           <div className="bottom-img">

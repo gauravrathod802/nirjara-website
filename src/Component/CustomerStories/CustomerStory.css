@@ -11,9 +11,9 @@
 .containers .sub-container .sub-container-child{
     margin-top: 20px;
     width: 96%;
-    height: 200px;
+    height: 240px;
     /* background-color: #FFD0CE; */
-    background-color: #007910;
+    background-color: 	#60774F;
 
     border-radius: 10px;
     padding-top: 12px;
@@ -27,7 +27,7 @@
     /* margin-top: 8px; */
     text-align: center;
     width: 96%;
-    height: 80px;
+    height: 160px;
     font-weight:400;
     padding: 0 45px;
     line-height: 25px;
