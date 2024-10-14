@@ -49,6 +49,8 @@ header{
 }
 .logo_img{
     height: 70px;
+    cursor: pointer;
+
 }
 
 nav{

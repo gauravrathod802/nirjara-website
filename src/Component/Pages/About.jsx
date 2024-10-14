@@ -1,4 +1,4 @@
-import AboutImg from '../../assets/NirjaraLogo.png';
+import AboutImg from '../../assets/NirjaraLogo_black.png';
 import './About.css';
 
 const About = () => {
@@ -33,7 +33,7 @@ const About = () => {
           <li>Eco-friendly packaging</li>
           <li>Cruelty-free and ethically sourced ingredients</li>
         </ul></p> 
-        <p>Get in touch via whatsapp + 910000000000
+        <p>Get in touch via whatsapp + 91 9075487410
         Or by emailing info@nirjaraskincare@gmail.com</p>
     </div>
   )

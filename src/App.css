@@ -1,0 +1,10 @@
+body{
+    font-family: 'Montserrat',sans-serif;
+}
+@font-face {
+    font-family: 'Gullia';
+    src: url('./fonts/gullia.otf') format('otf'),
+         url('./fonts/gullia.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+  }

@@ -1,21 +1,36 @@
+import { useEffect } from "react";
 import Tagline1 from "../images/Tagline1.png";
 import Tagline2 from "../images/Tagline2.png";
 import Tagline3 from "../images/Tagline3.png";
+import Tagline4 from "../images/Tagline4.jpeg";
+import Tagline5 from "../images/Tagline5.png";
 import './TagLine.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const TagLine = () => {
+
+    useEffect(()=>{
+        AOS.init({duration: 2000});
+    },[])
+
+
     return (
-        <div className="banner">
+        <div className="banner" data-aos="fade-up">
             <div className="content-container">
                 <h1 className="heading">Pure. Gentle. Ayurvedic.</h1>
                 <p className="tagline">Rejuvenate Your Skin with the Wisdom of Ayurveda.</p>
                 <p className="content">
-                    Welcome to a new age of skincare where ancient Ayurvedic wisdom meets modern convenience. Our <strong>Nirjara Powder Face Wash</strong> is meticulously crafted with the <strong>100% </strong>natural ingredients to bring out your skin's true radiance, all while staying gentle on the skin and kind to nature.
+                    Welcome to a new age of skincare where ancient Ayurvedic wisdom meets modern convenience. <br /> Our <strong>Nirjara Powder Face Wash</strong> is meticulously crafted with the <strong>100% </strong>natural ingredients to bring out your skin's true radiance, all while staying gentle on the skin and kind to nature.
                 </p>
-                <div className="image-container">
+                <div className="image-container" data-aos="fade-right" data-aos-easing="ease-in-sine">
                     <img src={Tagline1} alt="Ayurvedic Face Wash" className="product-image" />
                     <img src={Tagline2} alt="Ayurvedic Face Wash" className="product-image" />
                     <img src={Tagline3} alt="Ayurvedic Face Wash" className="product-image" />
+                    <img src={Tagline4} alt="Ayurvedic Face Wash" className="product-image" />
+                    <img src={Tagline5} alt="Ayurvedic Face Wash" className="product-image" />
+
+
                 </div>
             </div>
         </div>

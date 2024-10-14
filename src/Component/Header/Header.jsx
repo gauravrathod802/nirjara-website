@@ -92,7 +92,7 @@
 
 
 
-import Logo from "../../assets/NirjaraLogo.png";
+import Logo from "../../assets/NirjaraLogo_black.png";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
@@ -136,7 +136,7 @@ const Header = ({ toggleDrawer, routes }) => {
                         <i>
                             <FaBars onClick={toggleDrawer} />
                         </i>
-                        <a href="#" onClick={handleHomeClick}>
+                        <a onClick={handleHomeClick}>
                             <img className="logo_img" src={Logo} alt="" />
                         </a>
                     </div>
