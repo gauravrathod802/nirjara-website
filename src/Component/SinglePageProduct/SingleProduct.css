@@ -263,7 +263,7 @@
 }
 
 .tax-info {
-    font-size: 12px;
+    font-size: 11px;
     color: #777;
 }
 /* 
@@ -377,31 +377,94 @@
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .product-container {
-        flex-direction: column; /* Stack items for tablets and smaller screens */
+        flex-direction: column; 
         align-items: center;
     }
 
     .product-gallery {
-        max-width: 100%; /* Full width on smaller devices */
+        max-width: 100%;
     }
 
     .main-image img {
-        max-height: 250px; /* Reduce the height for tablets */
+        max-height: 250px;
     }
 }
 
 @media (max-width: 768px) {
     .product-container {
-        padding: 10px;
+        padding: 20px;
     }
 
     .product-details h1 {
-        font-size: 22px; /* Smaller title for mobile */
+        font-size: 18px; 
     }
 
-    .main-image img {
-        max-height: 200px; /* Reduce image size further for mobile */
+    .short-description {
+        margin: 12px 0;
+        font-size: 13px;
+        color: #555;
     }
+
+    .product-features {
+        margin: 10px 0;
+        font-size: 13px;
+        color: #555;
+    }
+    
+    .product-ingredients {
+        margin: 20px 0;
+        font-size: 12px;
+        color: #777;
+    }
+    
+    .price-section {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    
+    .old-price {
+        text-decoration: line-through;
+        color: #999;
+        font-size: 14px;
+    }
+    
+    .new-price {
+        font-size: 18px;
+        font-weight: bold;
+        color: #e74c3c;
+    }
+
+
+    .quantity-input button {
+        width: 30px;
+        height: 30px;
+        font-size: 18px; /* Font size for button text */
+        font-weight: bold;        
+    }
+
+    .quantity-input input {
+        width: 40px;
+        height: 30px;     
+        font-size: 15px;
+    }
+
+
+    .main-image img {
+        max-height: 180px; /* Reduce image size further for mobile */
+    }
+
+    .product-gallery {
+        max-width: 70%;
+    }
+
+    
+.thumbnail-images img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+ 
+}
 
     .button-group {
         flex-direction: column; /* Stack buttons vertically */
