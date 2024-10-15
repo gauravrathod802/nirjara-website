@@ -357,7 +357,7 @@
 
 
 
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "./SingleProduct.css"; // Make sure your CSS is modular and clean
 
@@ -365,6 +365,13 @@ const SingleProduct = () => {
   const [product, setProduct] = useState(null);
   const [selectedImage, setSelectedImage] = useState("");
   const [quantity, setQuantity] = useState(1); // State for quantity
+  const navigate = useNavigate(); // Initialize navigate
+
+
+  const handleBuyNow = () => {
+    navigate(`/nirjara-website/product/checkout/`, { state: { product } }); // Pass product data in the state
+  };
+  
 
   const { state } = useLocation();
 
@@ -461,7 +468,7 @@ const SingleProduct = () => {
           {/* Add to Cart and Buy Now Buttons */}
           <div className="button-group">
             <button className="btn-add-to-cart">Add to Cart</button>
-            <button className="btn-buy-now">Buy it Now</button>
+            <button className="btn-buy-now" onClick={handleBuyNow} >Buy it Now</button>
           </div>
         </div>
       </div>

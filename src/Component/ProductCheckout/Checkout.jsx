@@ -114,7 +114,7 @@
 //         </div>
 
 
-        
+
 //         <div className="checkout-rightpart">
 //             <h1>Product Details</h1>
 //             <div className="checkout-product-details-container">
@@ -153,101 +153,109 @@
 
 
 
-
-
 import "./Checkout.css";
 import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 const Checkout = () => {
-  const [productData, setProductData] = useState({
-    imagename: '',
-    title: '',
-    description: '',
-    rating: '',
-    price: ''
-  });
+    const [productData, setProductData] = useState({
+        imagename: '',
+        title: '',
+        rating: '',
+        price: ''
+    });
 
-  const { state } = useLocation();
-  const navigate = useNavigate();
-  const product = state?.product;
+    const { state } = useLocation();
+    const navigate = useNavigate();
+    const product = state?.product;
 
-  useEffect(() => {
-    if (!product) {
-      console.error('Product data is missing');
-      navigate('/products'); // Redirect if product data is missing
-    } else {
-      setProductData({
-        imagename: product.image,
-        title: product.title,
-        description: product.description,
-        rating: product.rating,
-        price: product.price
-      });
-    }
-  }, [product, navigate]);
+    useEffect(() => {
+        if (!product) {
+            console.error('Product data is missing');
+            navigate('/nirjara-website/product'); // Redirect to a safer page if product data is missing
+        } else {
+            setProductData({
+                imagename: product.images?.[0] || '', // Default to the first image or empty string if missing
+                title: product.title,
+                rating: product.rating,
+                oldPrice: product.oldPrice,
+                price: product.price,
+            });
+        }
+    }, [product, navigate]);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Validate form and submit data
-  };
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Validate form and submit data
+    };
 
-  return (
-    <div className='checkout-main'>
-      <div className='checkout-leftpart'>
-        <div className="checkout-bottom">
-          <p>Delivery Address</p>
-          <form onSubmit={handleSubmit}>
-            <div className="checkout-leftpart-namefield">
-              <input type="text" id='firstname' placeholder='First name' required />
-              <input type="text" id='lastname' placeholder='Last name' required />
+    return (
+        <div className='checkout-main'>
+            {/* Left Section - Delivery Address Form */}
+            <div className='checkout-leftpart'>
+                <div className="checkout-bottom">
+                    <p>Delivery Address</p>
+                    <form onSubmit={handleSubmit}>
+                        <div className="checkout-leftpart-namefield">
+                            <input type="text" id='firstname' placeholder='First name' required />
+                            <input type="text" id='lastname' placeholder='Last name' required />
+                        </div>
+                        <input type="text" id='address' placeholder='Address' required />
+                        <input type="text" id='apartment' placeholder='Apartment, suite, etc (optional)' />
+                        <div className='checkout-citydetails'>
+                            <input type="text" id='city' placeholder="City" required />
+                            <input type="text" id='state' placeholder="State" required />
+                            <input type="text" id='pincode' placeholder="Pincode" required />
+                        </div>
+                        <input type="number" id='phone' placeholder='Mobile Number' required />
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
             </div>
-            <input type="text" id='address' placeholder='Address' required />
-            <input type="text" id='apartment' placeholder='Apartment, suite, etc (optional)' />
-            <div className='checkout-citydetails'>
-              <input type="text" id='city' placeholder="City" required />
-              <input type="text" id='state' placeholder="State" required />
-              <input type="text" id='pincode' placeholder="Pincode" required />
+
+            {/* Right Section - Product Details */}
+            <div className="checkout-rightpart">
+                <h1>Product Details</h1>
+                {productData && (
+                    <div className="checkout-product-details-container">
+                        <div className="checkout-productdetailes">
+                            <img src={productData.imagename} alt="Product" loading="lazy" />
+
+                            <div className="product-info">
+                                <h2>{productData.title}</h2>
+
+                                {/* Rating Section */}
+                                <div className="rating">
+                                    {[...Array(Math.round(productData.rating))].map((_, i) => (
+                                        <span key={i}>⭐</span>
+                                    ))}
+                                </div>
+
+                                <div className="price-container">
+                                    <p className="old-price">Old Price: Rs. {productData.oldPrice}</p>
+                                    <p className="new-price">Price: Rs. {productData.price}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Price Calculation */}
+                        <div className='checkout-calculated-price'>
+                            <p>SubTotal</p>
+                            <p className='price'>Rs. {productData.price}</p>
+                        </div>
+                        <div className='checkout-calculated-price'>
+                            <p>Total</p>
+                            <p className='price'>Rs. {productData.price}</p>
+                        </div>
+                        <div className='checkout-calculated-price'>
+                            <p>Including Rs.37.80 in taxes</p>
+                        </div>
+                    </div>
+                )}
             </div>
-            <input type="number" id='phone' placeholder='Mobile Number' required />
-            <button type="submit">Submit</button>
-          </form>
         </div>
-
-        {/* Payment Options */}
-        <div className="checkout-payment">
-          {/* Payment components */}
-        </div>
-      </div>
-
-      {/* Right Part - Product Details */}
-      <div className="checkout-rightpart">
-        <h1>Product Details</h1>
-        {productData && (
-          <div className="checkout-product-details-container">
-            <div className='checkout-productdetailes'>
-              <img src={productData.imagename} alt="Product" loading="lazy" />
-              <h2>{productData.title}</h2>
-              <p>{productData.description}</p>
-              <p>Price: Rs. {productData.price}</p>
-            </div>
-
-            <div className='checkout-calculated-price'>
-              <p>SubTotal</p>
-              <p className='price'>Rs.{productData.price}</p>
-            </div>
-            <div className='checkout-calculated-price'>
-              <p>Total</p>
-              <p className='price'>Rs.{productData.price}</p>
-            </div>
-            <div className='checkout-calculated-price'>
-              <p>Including Rs.37.80 in taxes</p>
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
-  );
+    );
 }
 
 export default Checkout;
+

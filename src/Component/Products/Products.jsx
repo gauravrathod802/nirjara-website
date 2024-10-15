@@ -196,7 +196,7 @@ const products = [
     images: [ProductImage1, ProductImage2, ProductImage3],
     title: "Vata Powder Face Wash",
     description: "Vata skin? Nourish and hydrate with Nirjara Vata Face Wash Powder, enriched with Aloe Vera, Shatavari, and Ashwagandha.",
-    rating: 5,
+    rating: 4,
     price: "149",
     oldPrice:"199",
   },
